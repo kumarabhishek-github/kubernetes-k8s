@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: continaer-memory
+spec:
+  containers:
+  - name: constraints-memory
+    image: nginx
+    resources:
+      limits:
+        memory: "800Mi" # <=1G Memory limit of the container.
+      requests:
+        memory: "500Mi" # >=500
