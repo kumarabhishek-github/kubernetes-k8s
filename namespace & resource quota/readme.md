@@ -13,3 +13,9 @@ Resource Quotas can be defined for CPU, memory, and other resources like pods, s
 Example:
 when you want to limit the amount of CPU and memory that can be consumed in the marketing namespace to avoid one department monopolizing resources.
 
+
+***
+ kubectl config set-context $(kubectl config current-context) --namespace=dev:- to set  the namespace to dev
+ 
+  kubectl config view | grep namespace:- to view namespace
+***
